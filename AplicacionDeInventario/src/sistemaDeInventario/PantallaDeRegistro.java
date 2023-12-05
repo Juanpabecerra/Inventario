@@ -27,7 +27,7 @@ public class PantallaDeRegistro extends JFrame {
 	private JTextField TContrasena;
 	private JTextField TCorreoElectronico;
 	
-	File f = new File("C:\\Users\\Juan Pablo\\eclipse-workspace\\ProgramaDeInventario\\Carpeta de Usuarios");
+	File f = new File("C:\\Users\\Juan Pablo\\git\\ProyectoEscuela\\AplicacionDeInventario\\Carpeta de Usuarios");
 	
 	int linea;
 	
@@ -43,11 +43,11 @@ public class PantallaDeRegistro extends JFrame {
 	
 	void leerArchivo() {
 		try {
-			FileReader fr = new FileReader("C:\\Users\\Juan Pablo\\eclipse-workspace\\ProgramaDeInventario\\Carpeta de Usuarios\\Usuarios.txt");
+			FileReader fr = new FileReader("C:\\Users\\Juan Pablo\\git\\ProyectoEscuela\\AplicacionDeInventario\\Carpeta de Usuarios\\Usuarios.txt");
 			System.err.println("El archivo ya existe");
 		} catch (FileNotFoundException e) {
 			try {
-				FileWriter fw = new FileWriter("C:\\Users\\Juan Pablo\\eclipse-workspace\\ProgramaDeInventario\\Carpeta de Usuarios\\Usuarios.txt");
+				FileWriter fw = new FileWriter("C:\\Users\\Juan Pablo\\git\\ProyectoEscuela\\AplicacionDeInventario\\Carpeta de Usuarios\\Usuarios.txt");
 				System.out.println("Archivo creado");
 			} catch (IOException e1) {
 				// TODO Auto-generated catch block
@@ -61,7 +61,7 @@ public class PantallaDeRegistro extends JFrame {
 	
 	void agregarDatos(String usr, String pwd, String email) {
 		try {
-			RandomAccessFile raf = new RandomAccessFile("C:\\Users\\Juan Pablo\\eclipse-workspace\\ProgramaDeInventario\\Carpeta de Usuarios\\Usuarios.txt", "rw");
+			RandomAccessFile raf = new RandomAccessFile("C:\\Users\\Juan Pablo\\git\\ProyectoEscuela\\AplicacionDeInventario\\Carpeta de Usuarios\\Usuarios.txt", "rw");
 			for(int i=0; i<linea; i++) {
 				raf.readLine();
 			}
@@ -83,7 +83,7 @@ public class PantallaDeRegistro extends JFrame {
 
 	void checarDatos(String usr, String pwd) {
 		try {
-			RandomAccessFile raf = new RandomAccessFile("C:\\Users\\Juan Pablo\\eclipse-workspace\\ProgramaDeInventario\\Carpeta de Usuarios\\Usuarios.txt", "rw");
+			RandomAccessFile raf = new RandomAccessFile("C:\\Users\\Juan Pablo\\git\\ProyectoEscuela\\AplicacionDeInventario\\Carpeta de Usuarios\\Usuarios.txt", "rw");
 			String line = raf.readLine();
 			Usuario=line.substring(9);
 			Contrasena=raf.readLine().substring(12);
@@ -106,7 +106,7 @@ public class PantallaDeRegistro extends JFrame {
 	void contarLineas() {
 		try {
 			linea=1;
-			RandomAccessFile raf = new RandomAccessFile("C:\\Users\\Juan Pablo\\eclipse-workspace\\ProgramaDeInventario\\Carpeta de Usuarios\\Usuarios.txt", "rw");
+			RandomAccessFile raf = new RandomAccessFile("C:\\Users\\Juan Pablo\\git\\ProyectoEscuela\\AplicacionDeInventario\\Carpeta de Usuarios\\Usuarios.txt", "rw");
 			for(int i=0; raf.readLine() !=null;i++) {
 				linea++;
 				
