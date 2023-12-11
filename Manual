@@ -1,0 +1,79 @@
+a.	Descripción, problema identificado, solución, arquitectura
+La aplicación desarrollada se puede implementar en diversas empresas, principalmente pequeñas y medianas ya que ayuda a llevar un inventario de manera más ordenada y sencilla, permitiéndoles a los usuarios el registro de todos los productos que vendan, modificar cantidades y actualizar los inventarios al momento que quieran desde la facilidad de su celular o equipo de cómputo. Adicional a lo previamente mencionado, la aplicación cuenta con registro de usuarios y verificación de los mismos con uso de contraseña y nombre de usuario, si no se cuenta con la información correcta o registrada previamente, la aplicación no permite el acceso al inventario, esto con la finalidad de evitar que cualquier persona externa a la empresa pueda modificar información relevante.
+
+ 
+
+b.	Tabla de contenidos (ToC) con enlaces o a la sección wiki dentro del repositorio o algún medio externo como ReadTheDocs.io
+
+
+
+
+
+2.	Requerimientos:
+
+a.	Servidores de aplicación, web, bases de datos, etc.
+Hasta este momento la aplicación no cuenta con servidores, sin embargo, en una versión futura y completa, la información que sea ingresada tanto de productos como de usuarios se registrará en una base de datos, para tener mejor manejo de la información guardada.
+
+b.	Paquetes adicionales.
+La aplicación no requiere de paquetes adicionales, únicamente es necesario contar con Java versión 17 o posterior.
+
+c.	Versión de Java, etc.
+Java 17
+
+3.	Instalación:
+
+a.	¿Cómo instalar el ambiente de desarrollo?
+Para el ambiente de desarrollo se puede usar el que sea de la preferencia del usuario, en este caso utilizamos Eclipse el cual puede ser descargado del enlace a continuación: https://www.eclipse.org/downloads/
+Para instalarlo solamente hay que seguir los pasos indicados por el instalador una vez descargado.
+ 
+b.	¿Cómo ejecutar pruebas manualmente?
+Se puede ejecutar una prueba manual desde el entorno de desarrollo integrado Eclipse al hacer click derecho del lado izquierdo de las líneas de código como se muestra en la captura. Una vez que se da click derecho, se selecciona la opción de toogle a breackpoint, esto hace que una vez que se ejecuta el programa, al llegar a la línea donde se activó el breackpoint, esto nos enviará al modo de debugging, donde se nos detallará a detalle las acciones que se hacen línea por línea.
+
+ 
+ 
+
+
+c.	¿Cómo implementar la solución en producción en un ambiente local o en la nube como Heroku?
+De momento no se implementa ninguna, todo queda en el repositorio global y dentro del entorno de desarrollo integrado.
+
+
+4.	Configuración:
+
+a.	Configuración del producto (archivos de configuración).
+La aplicación por el momento únicamente cuenta con su archivo .jar para su ejecución.
+
+b.	Configuración de los requerimientos.
+No hay requerimientos adicionales, la ejecución de la aplicación puede ser directamente desde el entorno de desarrollo.
+
+5.	Uso:
+
+a.	Sección de referencia para usuario final. Manual que se hará referencia para usuarios finales.
+La aplicación es muy intuitiva y amigable con los usuarios, se cuenta con la sección inicial que nos permite decidir si se desea registrar a un usuario nuevo o iniciar sesión.
+
+ 
+
+Solamente hay que seleccionar las opciones deseadas y llenar los campos que se solicitan, en caso de seleccionar una opción por error, la misma aplicación cuenta con un botón para regresar en cada uno de sus menús para poder volver a la pantalla anterior como se muestra en las capturas a continuación: 
+
+ 
+
+ 
+
+b.	Sección de referencia para usuario administrador.
+La aplicación puede ser manipulada por cualquier usuario, se recomienda al usuario administrador registrar solamente a usuarios autorizados para que la información del inventario no sea manipulada por externos, queda a decisión de los administradores si los usuarios se registran con información de la empresa o personal.
+
+
+6.	Contribución:
+
+a.	Guía de contribución para usuarios.
+La aplicación puede ser modificada por cualquier usuario, sin embargo, esto quedará habilitado para versiones posteriores una vez que este completa y en funcionamiento.
+
+b.	Debe contar con pasos específicos para clonar repositorio, crear un nuevo branch, enviar el pull request, esperar a hacer el merge.
+No aplica para la versión en la que se entrega en este momento.
+
+
+7.	Roadmap:
+
+a.	Requerimientos que se implementarán en un futuro.
+Se reemplazará el archivo de texto por una base de datos para el registro de usuarios y productos.
+Mejoras a la interfaz gráfica.
+Finalización de la aplicación para que pueda contar con todas las funciones deseadas.
